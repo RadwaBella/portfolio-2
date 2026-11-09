@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radwa Belahsiniya – Développeuse Full-Stack</title>
+  <meta name="description" content="Portfolio de Radwa Belahsiniya, développeuse full-stack disponible pour vos projets.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <a href="#hero" class="logo">&lt;radwa<span>/</span>&gt;</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">à propos</a></li>
+        <li><a href="#education">formation</a></li>
+        <li><a href="#skills">compétences</a></li>
+        <li><a href="#experience">expérience</a></li>
+        <li><a href="#projects">projets</a></li>
+        <li><a href="#footer" class="nav-cta">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <p class="hello">Salut, je suis</p>
+        <h1>Radwa Belahsiniya<span class="cursor">_</span></h1>
+        <p class="role">Développeuse full-stack,<br>toujours disponible pour vos projets.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-code"></i> Voir mes projets</a>
+          <a href="#footer" class="btn btn-ghost"><i class="fa-regular fa-envelope"></i> Me contacter</a>
+        </div>
+      </div>
+
+      <div class="editor" aria-label="Éditeur de code présentant le profil">
+        <div class="editor-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="file"><i class="fa-brands fa-js"></i> developpeuse.js</span>
+        </div>
+        <pre class="editor-body"><code id="typed"></code><span class="caret"></span></pre>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2 class="title"><span class="c">//</span> à propos</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Je suis Radwa, développeuse full-stack. Je crée des sites et des applications web, de l'interface visible jusqu'à la base de données.</p>
+            <p>Bachelière en sciences physiques (mention bien, 2026), j'ai suivi une formation full-stack à Najm Association et j'ai déjà réalisé 3 projets professionnels. Je suis toujours disponible pour de nouveaux projets.</p>
+          </div>
+          <ul class="stats">
+            <li><strong data-count="3">0</strong><span>projets professionnels</span></li>
+            <li><strong data-count="8">0</strong><span>langages et technologies</span></li>
+            <li><strong data-count="5">0</strong><span>outils maîtrisés</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="title"><span class="c">//</span> formation</h2>
+        <div class="edu-list">
+          <article class="edu">
+            <i class="fa-solid fa-laptop-code"></i>
+            <div>
+              <h3>Formation Full-Stack Developer</h3>
+              <p class="meta">Najm Association</p>
+              <p>Formation complète au développement web : interfaces front-end, logique back-end et bases de données.</p>
+            </div>
+          </article>
+          <article class="edu">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <h3>Baccalauréat – Sciences physiques</h3>
+              <p class="meta">2026 · Mention bien</p>
+              <p>Un parcours scientifique qui m'a donné le goût de la logique et de la résolution de problèmes.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2 class="title"><span class="c">//</span> compétences</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3><i class="fa-solid fa-window-maximize"></i> Frontend</h3>
+            <div class="chips">
+              <span><i class="fa-brands fa-html5"></i> HTML</span>
+              <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+              <span><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span><i class="fa-brands fa-react"></i> React</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3><i class="fa-solid fa-server"></i> Backend</h3>
+            <div class="chips">
+              <span><i class="fa-brands fa-php"></i> PHP</span>
+              <span><i class="fa-brands fa-python"></i> Python</span>
+              <span><i class="fa-solid fa-database"></i> MySQL</span>
+              <span><i class="fa-solid fa-leaf"></i> MongoDB</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Outils</h3>
+            <div class="chips">
+              <span><i class="fa-brands fa-git-alt"></i> Git</span>
+              <span><i class="fa-brands fa-github"></i> GitHub</span>
+              <span><i class="fa-brands fa-figma"></i> Figma</span>
+              <span><i class="fa-solid fa-code"></i> VS Code</span>
+              <span><i class="fa-brands fa-docker"></i> Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="title"><span class="c">//</span> expérience</h2>
+        <div class="log">
+          <article class="commit">
+            <p class="hash"><i class="fa-solid fa-code-commit"></i> projets professionnels</p>
+            <h3>3 projets réalisés</h3>
+            <ul>
+              <li>Conception et développement de projets web pour de vrais clients.</li>
+              <li>Travail avec Git et GitHub pour suivre et partager le code.</li>
+            </ul>
+          </article>
+          <article class="commit">
+            <p class="hash"><i class="fa-solid fa-code-commit"></i> formation</p>
+            <h3>Développeuse Full-Stack <span>@ Najm Association</span></h3>
+            <ul>
+              <li>Apprentissage du front-end : HTML, CSS, JavaScript et React.</li>
+              <li>Apprentissage du back-end : PHP, Python, MySQL et MongoDB.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2 class="title"><span class="c">//</span> projets</h2>
+        <div class="projects-grid">
+          <article class="project">
+            <div class="project-top"><i class="fa-regular fa-folder-open"></i>
+              <div><a href="https://github.com/RadwaBella" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
+            </div>
+            <h3>Projet professionnel 1</h3>
+            <p>Description à compléter : expliquez ici ce que fait ce projet.</p>
+            <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          </article>
+          <article class="project">
+            <div class="project-top"><i class="fa-regular fa-folder-open"></i>
+              <div><a href="https://github.com/RadwaBella" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
+            </div>
+            <h3>Projet professionnel 2</h3>
+            <p>Description à compléter : expliquez ici ce que fait ce projet.</p>
+            <ul class="tech"><li>React</li><li>PHP</li><li>MySQL</li></ul>
+          </article>
+          <article class="project">
+            <div class="project-top"><i class="fa-regular fa-folder-open"></i>
+              <div><a href="https://github.com/RadwaBella" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
+            </div>
+            <h3>Projet professionnel 3</h3>
+            <p>Description à compléter : expliquez ici ce que fait ce projet.</p>
+            <ul class="tech"><li>Python</li><li>MongoDB</li><li>Docker</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <div class="container footer-inner">
+      <h2>Construisons quelque chose ensemble.</h2>
+      <p>Je suis toujours disponible pour vos projets.</p>
+      <a href="mailto:radwa.bellahsiniya@icloud.com" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> radwa.bellahsiniya@icloud.com</a>
+      <div class="socials">
+        <a href="https://github.com/RadwaBella" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/radwa-belahsiniya/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:radwa.bellahsiniya@icloud.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+      <p class="copy">&copy; <span id="year"></span> Radwa Belahsiniya. Fait avec HTML, CSS et JavaScript.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Retour en haut"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
